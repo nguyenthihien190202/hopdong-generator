@@ -7,7 +7,8 @@ const Docxtemplater = require("docxtemplater");
 const mammoth = require("mammoth");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
+
 
 // Cho phép truy cập file tĩnh (HTML form)
 app.use(express.static("public"));
