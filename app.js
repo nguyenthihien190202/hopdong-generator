@@ -9,6 +9,10 @@ const mammoth = require("mammoth");
 const app = express();
 const port = process.env.PORT || 3000;
 
+const cors = require("cors");
+app.use(cors());
+
+
 
 // Cho phép truy cập file tĩnh (HTML form)
 app.use(express.static("public"));
